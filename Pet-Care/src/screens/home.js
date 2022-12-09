@@ -47,6 +47,7 @@ const HomeScreen = ({navigation}) => {
     await Linking.openURL(url);
   }
 
+  //Handles notification sending for feeding the pet
   const handleNotification = () => {
     Notifications.postLocalNotification({
       title: "Feed Time!",
